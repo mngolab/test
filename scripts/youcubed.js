@@ -27,4 +27,6 @@ $('a.scrolling').click(function (){alert('this working?')})
 
   $('a.colorbox').colorbox({iframe:true, innerWidth:720, innerHeight:405});
 
+  alert("Hello!");
+
 });

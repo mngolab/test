@@ -1,0 +1,785 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+/*
+ * Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*VARIABLES*/
+/*defined widths*/
+/*solid colors*/
+/*gradients*/
+/*borders*/
+/*MIXINS*/
+/* line 55, ../sass/styles.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 60, ../sass/styles.scss */
+body {
+  background: url('/images/body-grid-bg.png');
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* line 65, ../sass/styles.scss */
+h2 {
+  padding-bottom: 50px;
+  color: #f67e27;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1.05em;
+  text-transform: uppercase;
+}
+
+/* line 74, ../sass/styles.scss */
+h3 {
+  margin-bottom: 20px;
+  color: #00d2bb;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 81, ../sass/styles.scss */
+p {
+  margin-bottom: 15px;
+  color: #6d6e70;
+  font-size: 18px;
+  line-height: 1.25em;
+}
+
+/* line 89, ../sass/styles.scss */
+input[type="text"],
+input[type="email"] {
+  border: none;
+  color: #6d6e70;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* line 95, ../sass/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 97, ../sass/styles.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 99, ../sass/styles.scss */
+.page-wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* line 104, ../sass/styles.scss */
+.logo {
+  background-image: url('/images/logo.png');
+  background-repeat: no-repeat;
+  text-indent: -999999px;
+}
+
+/* column sizes */
+/* line 111, ../sass/styles.scss */
+.three-columns {
+  width: 23%;
+}
+
+/* line 115, ../sass/styles.scss */
+.four-columns {
+  width: 30%;
+}
+
+/* line 119, ../sass/styles.scss */
+.five-columns {
+  width: 40%;
+}
+
+/* line 123, ../sass/styles.scss */
+.six-columns {
+  width: 48%;
+}
+
+/* line 126, ../sass/styles.scss */
+.eight-columns {
+  width: 64%;
+}
+
+/* line 130, ../sass/styles.scss */
+.ten-columns {
+  width: 83%;
+}
+
+/* line 140, ../sass/styles.scss */
+.two-columns,
+.three-columns,
+.four-columns,
+.five-columns,
+.six-columns,
+.eight-columns,
+.ten-columns {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 9px;
+}
+/* line 144, ../sass/styles.scss */
+.two-columns.right,
+.three-columns.right,
+.four-columns.right,
+.five-columns.right,
+.six-columns.right,
+.eight-columns.right,
+.ten-columns.right {
+  float: right;
+}
+/* line 145, ../sass/styles.scss */
+.two-columns.last,
+.three-columns.last,
+.four-columns.last,
+.five-columns.last,
+.six-columns.last,
+.eight-columns.last,
+.ten-columns.last {
+  margin-right: 0;
+}
+
+/* line 149, ../sass/styles.scss */
+.whole-page {
+  width: 100%;
+}
+
+/* navigations */
+/* line 155, ../sass/styles.scss */
+nav {
+  height: 70px;
+}
+/* line 157, ../sass/styles.scss */
+nav ul {
+  margin: 20px 25px 0 0;
+  float: right;
+  list-style-type: none;
+}
+/* line 161, ../sass/styles.scss */
+nav ul li {
+  font-size: 11px;
+  color: #fff;
+  display: inline-block;
+}
+/* line 165, ../sass/styles.scss */
+nav ul li a {
+  padding-right: 10px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 171, ../sass/styles.scss */
+nav ul li:after {
+  content: "/";
+}
+/* line 174, ../sass/styles.scss */
+nav ul li:last-child:after {
+  content: "";
+}
+
+/* line 182, ../sass/styles.scss */
+#sliding-nav {
+  width: 100%;
+  height: 65px;
+  background:  #00adee;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1b75bb), color-stop(100%, #00adee)) #00adee;
+  background: -webkit-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: -moz-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: -o-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: linear-gradient(left, #1b75bb, #00adee) #00adee;
+}
+/* line 186, ../sass/styles.scss */
+#sliding-nav.stuck {
+  position: fixed;
+  top: 0;
+  z-index: 9999999;
+}
+/* line 191, ../sass/styles.scss */
+#sliding-nav .logo {
+  float: left;
+  margin: 15px 0 0 25px;
+  width: 155px;
+  height: 42px;
+  background: url('/images/logo-small.png') no-repeat;
+}
+
+/* sections */
+/* line 202, ../sass/styles.scss */
+#home {
+  background: url('/images/intro-drawing.png') no-repeat, url('/images/intro-grid-bg.png'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #040267), color-stop(100%, #00adee));
+  background: url('/images/intro-drawing.png') no-repeat, url('/images/intro-grid-bg.png'), -webkit-linear-gradient(#040267, #00adee);
+  background: url('/images/intro-drawing.png') no-repeat, url('/images/intro-grid-bg.png'), -moz-linear-gradient(#040267, #00adee);
+  background: url('/images/intro-drawing.png') no-repeat, url('/images/intro-grid-bg.png'), -o-linear-gradient(#040267, #00adee);
+  background: url('/images/intro-drawing.png') no-repeat, url('/images/intro-grid-bg.png'), linear-gradient(#040267, #00adee);
+  background-position: top center;
+}
+/* line 206, ../sass/styles.scss */
+#home:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 15px;
+  background:  #00adee;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1b75bb), color-stop(100%, #00adee)) #00adee;
+  background: -webkit-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: -moz-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: -o-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: linear-gradient(left, #1b75bb, #00adee) #00adee;
+}
+/* line 214, ../sass/styles.scss */
+#home h1.logo {
+  width: 410px;
+  height: 110px;
+  margin: 20px 0 0 -20px;
+}
+/* line 220, ../sass/styles.scss */
+#home p {
+  padding-right: 100px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.25em;
+}
+/* line 226, ../sass/styles.scss */
+#home p.intro-paragraph {
+  margin: 40px 0 20px;
+  padding-right: 100px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.15em;
+}
+/* line 235, ../sass/styles.scss */
+#home .revolution-btn {
+  display: block;
+  width: 310px;
+  height: 67px;
+  margin: 60px 0 60px 0;
+  padding-top: 29px;
+  background: url('/images/join-button-wide.png') no-repeat;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+/* line 246, ../sass/styles.scss */
+#home .revolution-btn small {
+  font-size: 14px;
+}
+/* line 249, ../sass/styles.scss */
+#home .revolution-btn:hover {
+  color: #0a0e71;
+}
+/* line 254, ../sass/styles.scss */
+#home .buckets {
+  margin-top: 25px;
+  padding: 20px 0 45px;
+  background: url('/images/intro-buckets-bg.png');
+  clear: both;
+}
+/* line 259, ../sass/styles.scss */
+#home .buckets li {
+  display: inline-block;
+  color: #fff;
+  vertical-align: top;
+}
+/* line 263, ../sass/styles.scss */
+#home .buckets li > * {
+  padding: 0 10px;
+}
+/* line 266, ../sass/styles.scss */
+#home .buckets li h3 {
+  margin: 25px 0 15px;
+  color: #fff;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+/* line 274, ../sass/styles.scss */
+#home .buckets li p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.25em;
+}
+/* line 279, ../sass/styles.scss */
+#home .buckets li a {
+  color: #fff;
+}
+
+/* line 286, ../sass/styles.scss */
+#content {
+  background: url('/images/path-bg.png') top center no-repeat;
+}
+
+/* line 290, ../sass/styles.scss */
+#intro {
+  height: 1000px;
+  padding-top: 345px;
+}
+
+/* line 295, ../sass/styles.scss */
+#first-steps {
+  height: 2600px;
+}
+/* line 297, ../sass/styles.scss */
+#first-steps .video-ideas {
+  padding-bottom: 70px;
+}
+/* line 299, ../sass/styles.scss */
+#first-steps .video-ideas h3 {
+  margin: 0 0 0 -10px;
+  padding: 10px;
+  background: url('/images/video-ideas-bg.png') no-repeat;
+  color: #00c717;
+}
+/* line 300, ../sass/styles.scss */
+#first-steps .video-ideas p {
+  padding-right: 40px;
+}
+/* line 301, ../sass/styles.scss */
+#first-steps .video-ideas img.cube {
+  margin-top: 75px;
+}
+/* line 303, ../sass/styles.scss */
+#first-steps .video-listing {
+  margin-bottom: 220px;
+}
+/* line 306, ../sass/styles.scss */
+#first-steps .content-tasks {
+  clear: both;
+  margin-top: 10px;
+  padding-bottom: 55px;
+}
+/* line 310, ../sass/styles.scss */
+#first-steps .content-tasks h3 {
+  margin: 0 0 0 -10px;
+  padding: 10px;
+  background: url('/images/content-tasks-bg.png') no-repeat;
+  color: #00c717;
+  margin-top: 65px;
+}
+/* line 315, ../sass/styles.scss */
+#first-steps .math-innovation {
+  padding-bottom: 230px;
+}
+/* line 316, ../sass/styles.scss */
+#first-steps .math-innovation h3 {
+  margin: 0 0 0 -10px;
+  padding: 10px;
+  background: url('/images/math-innovation-bg.png') no-repeat;
+  color: #00c717;
+}
+/* line 320, ../sass/styles.scss */
+#first-steps .tools-for-parents h3 {
+  margin: 0 0 0 -10px;
+  padding: 10px;
+  background: url('/images/tools-for-parents-bg.png') no-repeat;
+  color: #00c717;
+  margin-top: 30px;
+}
+
+/* line 326, ../sass/styles.scss */
+#whats-next {
+  height: 680px;
+}
+
+/* line 331, ../sass/styles.scss */
+#news .coming-soon {
+  margin-top: 200px;
+  position: relative;
+  width: 100%;
+  height: 519px;
+  background: url('/images/coming-soon-bg.png') center no-repeat;
+}
+/* line 337, ../sass/styles.scss */
+#news .coming-soon h3 {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  max-width: 265px;
+  font-style: italic;
+  line-height: 1.25em;
+}
+/* line 344, ../sass/styles.scss */
+#news .coming-soon h3 .highlight {
+  margin: 0 0 0 -10px;
+  padding: 10px;
+  background: url('/images/coming-soon-highlight.png') no-repeat;
+  color: #00c717;
+  padding-top: 0;
+}
+
+/* line 354, ../sass/styles.scss */
+#revolution .cyan-block {
+  padding: 40px 0 70px;
+  background: #00d2bb;
+  border-bottom: 30px solid #fff;
+}
+/* line 359, ../sass/styles.scss */
+#revolution .join-revolution {
+  width: 329px;
+  height: 178px;
+  background: url('/images/join-revolution.png') no-repeat;
+  color: #fff;
+  font-size: 36px;
+  font-style: italic;
+  text-align: center;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 370, ../sass/styles.scss */
+#revolution #join-form p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 376, ../sass/styles.scss */
+#revolution #join-form input[type="text"],
+#revolution #join-form input[type="email"] {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 5px 0 5px 20px;
+  font-size: 16px;
+}
+/* line 381, ../sass/styles.scss */
+#revolution #join-form input[type="text"].error,
+#revolution #join-form input[type="email"].error {
+  color: red;
+  border: 2px solid red;
+}
+/* line 387, ../sass/styles.scss */
+#revolution #join-form input[type="submit"] {
+  float: right;
+  width: 97px;
+  height: 31px;
+  margin-top: 20px;
+  background: url('/images/submit-btn.png') no-repeat;
+  border: 0;
+  cursor: pointer;
+  text-indent: -99999px;
+}
+/* line 398, ../sass/styles.scss */
+#revolution #join-form label.error {
+  display: block;
+  margin: 10px 0 20px 15px;
+  color: red;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+/* line 407, ../sass/styles.scss */
+#revolution #join-form #email {
+  margin-bottom: 15px;
+}
+/* line 411, ../sass/styles.scss */
+#revolution #join-form .security {
+  padding: 10px 15px;
+  width: 93%;
+  background: #efef00;
+}
+/* line 415, ../sass/styles.scss */
+#revolution #join-form .security .formula {
+  width: 100%;
+}
+/* line 417, ../sass/styles.scss */
+#revolution #join-form .security .formula span {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 25px;
+  padding-right: 5px;
+  color: #f67e27;
+  font-size: 44px;
+  font-weight: bold;
+}
+/* line 427, ../sass/styles.scss */
+#revolution #join-form .security .formula input[type="text"] {
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 110px;
+  height: 55px;
+  font-size: 40px;
+  text-align: center;
+}
+/* line 436, ../sass/styles.scss */
+#revolution #join-form .security .formula label.error {
+  position: relative;
+  top: 53px;
+  left: -15px;
+}
+/* line 444, ../sass/styles.scss */
+#revolution #join-form .accept {
+  margin: 3px 0 0 22px;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 450, ../sass/styles.scss */
+#revolution #testimonials {
+  margin: 40px auto 80px;
+}
+/* line 452, ../sass/styles.scss */
+#revolution #testimonials li {
+  padding: 10px 0;
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.25em;
+  text-align: left;
+}
+/* line 459, ../sass/styles.scss */
+#revolution #testimonials li:after {
+  display: block;
+  margin-top: 15px;
+  content: url('/images/testimonial-line1.png');
+}
+/* line 464, ../sass/styles.scss */
+#revolution #testimonials li:last-child:after {
+  content: "";
+}
+/* line 467, ../sass/styles.scss */
+#revolution #testimonials li .author {
+  display: block;
+  margin-top: 10px;
+}
+/* line 474, ../sass/styles.scss */
+#revolution .bottom {
+  background-image: url('/images/ie-bottom-bg.jpg');
+  background-color: #081474;
+  background-repeat: repeat-x;
+  background: url('/images/intro-grid-bg.png'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00adee), color-stop(100%, #040267));
+  background: url('/images/intro-grid-bg.png'), -webkit-linear-gradient(#00adee, #040267);
+  background: url('/images/intro-grid-bg.png'), -moz-linear-gradient(#00adee, #040267);
+  background: url('/images/intro-grid-bg.png'), -o-linear-gradient(#00adee, #040267);
+  background: url('/images/intro-grid-bg.png'), linear-gradient(#00adee, #040267);
+  text-align: center;
+}
+
+/* line 483, ../sass/styles.scss */
+footer {
+  padding: 20px 0 30px;
+  background:  #00adee;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1b75bb), color-stop(100%, #00adee)) #00adee;
+  background: -webkit-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: -moz-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: -o-linear-gradient(left, #1b75bb, #00adee) #00adee;
+  background: linear-gradient(left, #1b75bb, #00adee) #00adee;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.25em;
+}
+
+/*MISC*/
+/*alignment*/
+/* line 494, ../sass/styles.scss */
+.center-align {
+  margin: 0 auto;
+}
+
+/* line 498, ../sass/styles.scss */
+.video-listing a, .news-listing .thumb, .math-item a {
+  display: block;
+  padding: 10px;
+  border: 1px solid #00d2bb;
+}
+
+/* line 504, ../sass/styles.scss */
+.video-listing li, .news-listing li {
+  width: 300px;
+  vertical-align: top;
+}
+
+/* line 35, ../sass/styles.scss */
+.video-listing li {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 38, ../sass/styles.scss */
+.video-listing li:last-child {
+  margin-right: 0;
+}
+/* line 511, ../sass/styles.scss */
+.video-listing li {
+  margin-right: 40px;
+  position: relative;
+}
+/* line 515, ../sass/styles.scss */
+.video-listing li a {
+  position: absolute;
+  display: block;
+  height: 180px;
+  background: url('/images/play-button.png') 50% 50% no-repeat;
+}
+/* line 521, ../sass/styles.scss */
+.video-listing li img {
+  padding: 10px;
+}
+
+/* line 35, ../sass/styles.scss */
+.article-listing li {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 38, ../sass/styles.scss */
+.article-listing li:last-child {
+  margin-right: 0;
+}
+
+/* line 35, ../sass/styles.scss */
+.news-listing li {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 38, ../sass/styles.scss */
+.news-listing li:last-child {
+  margin-right: 0;
+}
+/* line 532, ../sass/styles.scss */
+.news-listing .thumb {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 150px;
+  width: 280px;
+}
+/* line 536, ../sass/styles.scss */
+.news-listing .thumb img {
+  max-width: 280px;
+}
+/* line 541, ../sass/styles.scss */
+.news-listing .article-date {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+/* line 545, ../sass/styles.scss */
+.news-listing .article-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 551, ../sass/styles.scss */
+.news-listing .summary {
+  color: #00d2bb;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 558, ../sass/styles.scss */
+.math-item a {
+  max-width: 88%;
+}
+
+/* line 562, ../sass/styles.scss */
+.required-field:before {
+  margin-left: -10px;
+  position: relative;
+  top: 4px;
+  left: -5px;
+  color: #f67e27;
+  content: "*";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*clearfix*/
+/* line 575, ../sass/styles.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 580, ../sass/styles.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 588, ../sass/styles.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/**
+ * IE Fixes - Because we all love IE... RIGHT?!
+ *
+ */
+/* line 597, ../sass/styles.scss */
+.is-ie9 #home, .lt-ie9 #home {
+  background: url('/images/ie-top-bg.jpg') no-repeat top center;
+}

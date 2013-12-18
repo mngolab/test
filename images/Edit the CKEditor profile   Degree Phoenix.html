@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://dev.local/degree/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Edit the CKEditor profile | Degree Phoenix</title>
+  <style type="text/css" media="all">@import url("http://dev.local/degree/modules/system/system.base.css?mwmw0u");
+@import url("http://dev.local/degree/modules/system/system.menus.css?mwmw0u");
+@import url("http://dev.local/degree/modules/system/system.messages.css?mwmw0u");
+@import url("http://dev.local/degree/modules/system/system.theme.css?mwmw0u");</style>
+<style type="text/css" media="all">@import url("http://dev.local/degree/modules/system/system.admin.css?mwmw0u");</style>
+<style type="text/css" media="all">@import url("http://dev.local/degree/sites/all/modules/contrib/date/date_api/date.css?mwmw0u");
+@import url("http://dev.local/degree/modules/field/theme/field.css?mwmw0u");
+@import url("http://dev.local/degree/modules/node/node.css?mwmw0u");
+@import url("http://dev.local/degree/modules/search/search.css?mwmw0u");
+@import url("http://dev.local/degree/modules/user/user.css?mwmw0u");
+@import url("http://dev.local/degree/sites/all/modules/contrib/views/css/views.css?mwmw0u");
+@import url("http://dev.local/degree/sites/all/modules/contrib/admin_menu/admin_menu.css?mwmw0u");
+@import url("http://dev.local/degree/sites/all/modules/contrib/admin_menu/admin_menu.uid1.css?mwmw0u");</style>
+<style type="text/css" media="all">@import url("http://dev.local/degree/sites/all/modules/contrib/ckeditor/ckeditor.css?mwmw0u");
+@import url("http://dev.local/degree/sites/all/modules/contrib/ctools/css/ctools.css?mwmw0u");</style>
+<style type="text/css" media="screen">@import url("http://dev.local/degree/themes/seven/reset.css?mwmw0u");
+@import url("http://dev.local/degree/themes/seven/style.css?mwmw0u");</style>
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="http://dev.local/degree/themes/seven/ie.css?mwmw0u" media="all" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://dev.local/degree/themes/seven/ie7.css?mwmw0u" media="all" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" href="http://dev.local/degree/themes/seven/ie6.css?mwmw0u" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="http://dev.local/degree/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://dev.local/degree/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://dev.local/degree/misc/drupal.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/misc/form.js?v=7.23"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/admin_menu/admin_menu.js?mwmw0u"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = "/degree/sites/all/modules/contrib/ckeditor/ckeditor/ckeditor/"
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/devel/devel_krumo_path.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/ckeditor/ckeditor/ckeditor/ckeditor.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/ckeditor/ckeditor.config.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/ckeditor/includes/ckeditor.admin.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/ckeditor/includes/jqueryUI/jquery-ui.min.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/ckeditor/includes/jqueryUI/jquery.ui.widget.min.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/ckeditor/includes/jqueryUI/jquery.ui.sortable.min.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/sites/all/modules/contrib/ckeditor/includes/jqueryUI/sort.js?mwmw0u"></script>
+<script type="text/javascript" src="http://dev.local/degree/misc/collapse.js?v=7.23"></script>
+<script type="text/javascript" src="http://dev.local/degree/misc/textarea.js?v=7.23"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/degree\/","pathPrefix":"","ajaxPageState":{"theme":"seven","theme_token":"PIib3dWPgIBvvSbjQrJDP-dOs32jQ89KBAbdt2sbYJY","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/form.js":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu.js":1,"0":1,"sites\/all\/modules\/contrib\/devel\/devel_krumo_path.js":1,"sites\/all\/modules\/contrib\/ckeditor\/ckeditor\/ckeditor\/ckeditor.js":1,"sites\/all\/modules\/contrib\/ckeditor\/ckeditor.config.js":1,"sites\/all\/modules\/contrib\/ckeditor\/includes\/ckeditor.admin.js":1,"sites\/all\/modules\/contrib\/ckeditor\/includes\/jqueryUI\/jquery-ui.min.js":1,"sites\/all\/modules\/contrib\/ckeditor\/includes\/jqueryUI\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/ckeditor\/includes\/jqueryUI\/jquery.ui.sortable.min.js":1,"sites\/all\/modules\/contrib\/ckeditor\/includes\/jqueryUI\/sort.js":1,"misc\/collapse.js":1,"misc\/textarea.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/system\/system.admin.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu.css":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu.uid1.css":1,"sites\/all\/modules\/contrib\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"themes\/seven\/reset.css":1,"themes\/seven\/style.css":1,"themes\/seven\/ie.css":1,"themes\/seven\/ie7.css":1,"themes\/seven\/ie6.css":1}},"ckeditor_version":"4.2.2","ckeditor_toolbar_wizard":"t","text_format_filters":{"full_html":[],"plain_text":{"filter_html_escape":true,"filter_url":true,"filter_autop":true}},"text_formats_config_links":{"full_html":{"name":"Full HTML","config_url":"\/degree\/admin\/config\/content\/formats\/full_html"},"plain_text":{"name":"Plain text","config_url":"\/degree\/admin\/config\/content\/formats\/plain_text"}},"cke_toolbar_buttons_all":{"Source":{"name":"Source","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/source.png","title":"Source","row":1},"Save":{"name":"Save","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/save.png","title":"Save","row":1},"NewPage":{"name":"NewPage","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/newPage.png","title":"New Page","row":1},"Preview":{"name":"Preview","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/preview.png","title":"Preview","row":1},"Templates":{"name":"Templates","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/templates.png","title":"Templates","row":1},"Cut":{"name":"Cut","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/cut.png","title":"Cut","row":1},"Copy":{"name":"Copy","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/copy.png","title":"Copy","row":1},"Paste":{"name":"Paste","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/paste.png","title":"Paste","row":1},"PasteText":{"name":"PasteText","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/pastePlainText.png","title":"Paste as plain text","row":1},"PasteFromWord":{"name":"PasteFromWord","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/pasteWord.png","title":"Paste from Word","row":1},"Print":{"name":"Print","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/print.png","title":"Print","row":1},"SpellChecker":{"name":"SpellChecker","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/checkSpelling.png","title":"Check Spelling","row":1},"Scayt":{"name":"Scayt","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/checkSpelling.png","title":"Spell Check As you Type","row":1},"Undo":{"name":"Undo","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/undo.png","title":"Undo","row":1},"Redo":{"name":"Redo","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/redo.png","title":"Redo","row":1},"Find":{"name":"Find","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/find.png","title":"Find","row":1},"Replace":{"name":"Replace","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/replace.png","title":"Replace","row":1},"SelectAll":{"name":"SelectAll","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/selectAll.png","title":"Select All","row":1},"RemoveFormat":{"name":"RemoveFormat","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/removeFormat.png","title":"Remove Format","row":1},"Form":{"name":"Form","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/form.png","title":"Form","row":1},"Checkbox":{"name":"Checkbox","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/checkbox.png","title":"Checkbox","row":1},"Radio":{"name":"Radio","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/radioButton.png","title":"Radio Button","row":1},"TextField":{"name":"TextField","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/textField.png","title":"Text Field","row":1},"Textarea":{"name":"Textarea","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/textarea.png","title":"Textarea","row":1},"Select":{"name":"Select","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/selectionField.png","title":"Selection Field","row":1},"Button":{"name":"Button","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/button.png","title":"Button","row":1},"ImageButton":{"name":"ImageButton","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/imageButton.png","title":"Image Button","row":1},"HiddenField":{"name":"HiddenField","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/hiddenField.png","title":"Hidden Field","row":1},"Bold":{"name":"Bold","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/bold.png","title":"Bold","row":2},"Italic":{"name":"Italic","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/italic.png","type":"command","title":"Italic","row":2},"Underline":{"name":"Underline","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/underline.png","title":"Underline","row":2},"Strike":{"name":"Strike","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/strike.png","title":"Strike Through","row":2},"Subscript":{"name":"Subscript","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/subscript.png","title":"Subscript","row":2},"Superscript":{"name":"Superscript","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/superscript.png","title":"Superscript","row":2},"NumberedList":{"name":"NumberedList","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/numberedList.png","title":"Insert\/Remove Numbered List","row":2},"BulletedList":{"name":"BulletedList","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/bulletedList.png","title":"Insert\/Remove Bulleted List","row":2},"Outdent":{"name":"Outdent","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/decreaseIndent.png","title":"Decrease Indent","row":2},"Indent":{"name":"Indent","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/increaseIndent.png","title":"Increase Indent","row":2},"Blockquote":{"name":"Blockquote","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/blockQuote.png","title":"Block Quote","row":2},"CreateDiv":{"name":"CreateDiv","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/createDivContainer.png","title":"Create Div Container","row":2},"JustifyLeft":{"name":"JustifyLeft","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/leftJustify.png","title":"Left Justify","row":2},"JustifyCenter":{"name":"JustifyCenter","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/centerJustify.png","title":"Center Justify","row":2},"JustifyRight":{"name":"JustifyRight","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/rightJustify.png","title":"Right Justify","row":2},"JustifyBlock":{"name":"JustifyBlock","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/blockJustify.png","title":"Block Justify","row":2},"BidiLtr":{"name":"BidiLtr","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/bidiLeft.png","title":"Text direction from left to right","row":2},"BidiRtl":{"name":"BidiRtl","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/bidiRight.png","title":"Text direction from right to left","row":2},"Link":{"name":"Link","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/link.png","title":"Link","row":2},"Unlink":{"name":"Unlink","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/unlink.png","title":"Unlink","row":2},"Anchor":{"name":"Anchor","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/anchor.png","title":"Anchor","row":2},"Image":{"name":"Image","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/image.png","title":"Image","row":2},"Flash":{"name":"Flash","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/flash.png","title":"Flash","row":2},"Table":{"name":"Table","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/table.png","title":"Table","row":2},"HorizontalRule":{"name":"HorizontalRule","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/horizontalLine.png","title":"Insert Horizontal Line","row":2},"Smiley":{"name":"Smiley","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/smiley.png","title":"Smiley","row":2},"SpecialChar":{"name":"SpecialChar","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/specialCharacter.png","title":"Inseert Special Character","row":2},"PageBreak":{"name":"PageBreak","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/pageBreakPrinting.png","title":"Insert Page Break for Printing","row":2},"Styles":{"name":"Styles","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/styles.png","title":"Formatting Styles","row":3},"Format":{"name":"Format","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/format.png","title":"Paragraph Format","row":3},"Font":{"name":"Font","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/font.png","title":"Font Name","row":3},"FontSize":{"name":"FontSize","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/fontSize.png","title":"Font Size","row":3},"TextColor":{"name":"TextColor","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/textColor.png","title":"Text Color","row":3},"BGColor":{"name":"BGColor","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/backgroundColor.png","title":"Background Color","row":3},"Maximize":{"name":"Maximize","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/maximize.png","title":"Maximize","row":3},"ShowBlocks":{"name":"ShowBlocks","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/showBlocks.png","title":"Show Blocks","row":3},"Iframe":{"name":"Iframe","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/iframe.png","title":"IFrame","row":3},"About":{"name":"About","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/about.png","title":"About","row":3},"__spacer":{"name":false,"icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/spacer.png","title":"Spacer","row":4},"__group":{"name":false,"icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/images\/buttons\/group.png","title":"Group","row":4},"DrupalBreak":{"name":"DrupalBreak","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/plugins\/drupalbreaks\/images\/drupalbreak.png","title":"DrupalBreak","row":4},"IMCE":{"name":"IMCE","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/plugins\/imce\/images\/icon.png","title":"IMCE","row":4},"MediaEmbed":{"name":"MediaEmbed","icon":"\/degree\/sites\/all\/modules\/contrib\/ckeditor\/plugins\/mediaembed\/images\/icon.png","title":"MediaEmbed","row":4}},"tableHeaderOffset":"Drupal.admin.height","admin_menu":{"destination":"destination=admin\/config\/content\/ckeditor\/edit\/Full","hash":"b7c75fcdf64ee0d72ec4208f09108b3b","basePath":"\/degree\/admin_menu","margin_top":1,"position_fixed":1}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front logged-in no-sidebars page-admin page-admin-config page-admin-config-content page-admin-config-content-ckeditor page-admin-config-content-ckeditor-edit page-admin-config-content-ckeditor-edit-full" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+  <div id="branding" class="clearfix">
+    <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/degree/">Home</a></div>              <h1 class="page-title">Edit the CKEditor profile</h1>
+              </div>
+
+  <div id="page">
+          <div class="tabs-secondary clearfix"></div>
+    
+    <div id="content" class="clearfix">
+      <div class="element-invisible"><a id="main-content"></a></div>
+              <div id="console" class="clearfix"><div class="messages error">
+<h2 class="element-invisible">Error message</h2>
+There is a security update available for your version of Drupal. To ensure the security of your server, you should update immediately! See the <a href="/degree/admin/reports/updates/update">available updates</a> page for more information and to install your missing updates.</div>
+</div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <form action="/degree/admin/config/content/ckeditor/edit/Full" method="post" id="ckeditor-admin-profile-form" accept-charset="UTF-8"><div><fieldset class="collapsible collapsed form-wrapper" id="edit-basic"><legend><span class="fieldset-legend">Basic setup</span></legend><div class="fieldset-wrapper"><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Profile name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="Full" size="40" maxlength="128" class="form-text required" />
+<div class="description">Enter a name for this profile. This name is only visible within the CKEditor administration page.</div>
+</div>
+<div class="form-item form-type-checkboxes form-item-input-formats">
+  <label for="input-formats">Text formats </label>
+ <div id="input-formats" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-input-formats-full-html">
+ <input type="checkbox" id="edit-input-formats-full-html" name="input_formats[full_html]" value="full_html" checked="checked" class="form-checkbox" />  <label class="option" for="edit-input-formats-full-html">Full HTML </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-input-formats-plain-text">
+ <input type="checkbox" id="edit-input-formats-plain-text" name="input_formats[plain_text]" value="plain_text" class="form-checkbox" />  <label class="option" for="edit-input-formats-plain-text">Plain text </label>
+
+</div>
+</div>
+<div class="description">Choose the text formats where you want to load CKEditor.</div>
+</div>
+</div></fieldset>
+<fieldset class="collapsible collapsed form-wrapper" id="edit-security"><legend><span class="fieldset-legend">Security</span></legend><div class="fieldset-wrapper"><div class="fieldset-description"><p>The CKEditor security system protects you from executing malicious code that is already in your database. In plain textareas database content is harmless because it is not executed, but the CKEditor WYSIWYG editor interprets HTML like a web browser and thus the content needs to be filtered before it is loaded.</p></div><div id="security-filters" class="form-wrapper"><div id="edit-header" class="form-item form-type-item">
+  <label for="edit-header">Security filters </label>
+ 
+<div class="description">Below is a list of security filters along with their status for each text format.<br /><br />The following statuses are available: </br><img src="/degree/sites/all/modules/contrib/ckeditor/images/tick.png"/> - the filter is configured for a given text format and will be run on the content during the filtering process. </br><img src="/degree/sites/all/modules/contrib/ckeditor/images/delete.png"/> - the filter is disabled for a given text format and will not be run on the content during the filtering process.<br /><br />In order to modify the security filters settings for each of the text formats, you need to visit the text format configuration sections as listed below: <ul class="text-formats-config"></ul></div>
+</div>
+<fieldset class="form-wrapper" id="edit-drupal"><legend><span class="fieldset-legend">Drupal core</span></legend><div class="fieldset-wrapper"><div class="filter-wrapper"></div><div class="filter-text-formats" filter="filter_html"></div><div class="filter-info"><div id="edit-filter-html" class="form-item form-type-item">
+  <label for="edit-filter-html">Limit allowed HTML tags </label>
+ 
+<div class="description">Removes the attributes that the built-in "Limit allowed HTML tags"-filter does not allow inside HTML elements/tags</div>
+</div>
+</div></div></fieldset>
+<fieldset class="form-wrapper" id="edit-wysiwyg-filter"><legend><span class="fieldset-legend">WYSIWYG Filter <a href="http://drupal.org/project/wysiwyg_filter" target="_blank">project page</a></span></legend><div class="fieldset-wrapper"><i>Not installed</i></div></fieldset>
+<fieldset class="form-wrapper" id="edit-htmltidy"><legend><span class="fieldset-legend">Htmltidy <a href="http://drupal.org/project/htmltidy" target="_blank">project page</a></span></legend><div class="fieldset-wrapper"><i>Not installed</i></div></fieldset>
+<fieldset class="form-wrapper" id="edit-htmlawed"><legend><span class="fieldset-legend">htmLawed <a href="http://drupal.org/project/htmLawed" target="_blank">project page</a></span></legend><div class="fieldset-wrapper"><i>Not installed</i></div></fieldset>
+<fieldset class="form-wrapper" id="edit-htmlpurifier"><legend><span class="fieldset-legend">HTML Purifier <a href="http://drupal.org/project/htmlpurifier" target="_blank">project page</a></span></legend><div class="fieldset-wrapper"><i>Not installed</i></div></fieldset>
+</div><div class="form-item form-type-radios form-item-ss">
+  <label for="edit-ss">Security settings </label>
+ <div id="edit-ss" class="form-radios"><div class="form-item form-type-radio form-item-ss">
+ <input type="radio" id="edit-ss-2" name="ss" value="2" checked="checked" class="form-radio" />  <label class="option" for="edit-ss-2">Always run security filters for CKEditor. </label>
+
+</div>
+<div class="form-item form-type-radio form-item-ss">
+ <input type="radio" id="edit-ss-1" name="ss" value="1" class="form-radio" />  <label class="option" for="edit-ss-1">Run security filters only when CKEditor is set to start automatically. </label>
+
+</div>
+</div>
+<div class="description">There are two ways of starting CKEditor: automatically and manually (via toggle). If you decide to apply security filters only when CKEditor starts automatically, you will not be protected when toggling manually from plain textarea to CKEditor. Choose this option only if you can detect various attacks (mainly XSS) by yourself just by looking at the HTML code.</div>
+</div>
+</div></fieldset>
+<fieldset class="collapsible collapsed form-wrapper" id="edit-appearance"><legend><span class="fieldset-legend">Editor appearance</span></legend><div class="fieldset-wrapper"><div class="form-item form-type-radios form-item-default">
+  <label for="edit-default">Default state </label>
+ <div id="edit-default" class="form-radios"><div class="form-item form-type-radio form-item-default">
+ <input type="radio" id="edit-default-t" name="default" value="t" checked="checked" class="form-radio" />  <label class="option" for="edit-default-t">Enabled </label>
+
+</div>
+<div class="form-item form-type-radio form-item-default">
+ <input type="radio" id="edit-default-f" name="default" value="f" class="form-radio" />  <label class="option" for="edit-default-f">Disabled </label>
+
+</div>
+</div>
+<div class="description">Default editor state. If disabled, the rich text editor may still be enabled by using toggle.</div>
+</div>
+<div class="form-item form-type-radios form-item-show-toggle">
+  <label for="edit-show-toggle">Show the disable/enable rich text editor toggle </label>
+ <div id="edit-show-toggle" class="form-radios"><div class="form-item form-type-radio form-item-show-toggle">
+ <input type="radio" id="edit-show-toggle-t" name="show_toggle" value="t" checked="checked" class="form-radio" />  <label class="option" for="edit-show-toggle-t">Show </label>
+
+</div>
+<div class="form-item form-type-radio form-item-show-toggle">
+ <input type="radio" id="edit-show-toggle-f" name="show_toggle" value="f" class="form-radio" />  <label class="option" for="edit-show-toggle-f">Hide </label>
+
+</div>
+</div>
+<div class="description">Whether or not to show the disable/enable rich text editor toggle below the textarea.</div>
+</div>
+<div class="form-item form-type-select form-item-uicolor">
+  <label for="edit-uicolor">User interface color </label>
+ <select id="edit-uicolor" name="uicolor" class="form-select"><option value="default" selected="selected">CKEditor default</option><option value="custom">Select manually</option></select>
+</div>
+<iframe frameborder="0" id="skinframe" marginheight="0" marginwidth="0" src="/degree/admin/config/content/ckeditor/skinframe?token=nNEiZiCyAGDbl7nAJq2jLA7vYAaP5IW7Vdvk7L0Ijyg&skin=moono&uicolor=D3D3D3" style="height:500px;width:700px;"></iframe><br/><input type="hidden" name="uicolor_user" value="#D3D3D3" />
+<div class="form-item form-type-textarea form-item-toolbar">
+  <label for="edit-toolbar">Toolbar </label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-toolbar" name="toolbar" cols="60" rows="15" class="form-textarea">[
+    [&#039;Format&#039;,&#039;Styles&#039;,&#039;Bold&#039;,&#039;Italic&#039;,&#039;-&#039;,&#039;NumberedList&#039;,&#039;BulletedList&#039;,&#039;-&#039;,&#039;Link&#039;,&#039;Unlink&#039;],
+    [&#039;Image&#039;,&#039;Table&#039;,&#039;Maximize&#039;,&#039;Iframe&#039;,&#039;CreateDiv&#039;]
+]</textarea></div>
+<div class="description">Load sample toolbar: <a href="#" id="cke_toolbar_DrupalBasic" class="cke_load_toolbar">Basic</a> | <a href="#" id="cke_toolbar_DrupalAdvanced" class="cke_load_toolbar">Advanced</a> | <a href="#" id="cke_toolbar_DrupalFull" class="cke_load_toolbar">Full</a></div>
+</div>
+<div>Used buttons</div><div class="sortableList" id="groupLayout"></div><br/><div>All buttons</div><div id="allButtons" class="sortableList"></div><br/><div class="form-item form-type-checkboxes form-item-loadPlugins">
+  <label for="edit-loadplugins">Plugins </label>
+ <div id="edit-loadplugins" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-loadPlugins-counter">
+ <input type="checkbox" id="edit-loadplugins-counter" name="loadPlugins[counter]" value="counter" checked="checked" class="form-checkbox" />  <label class="option" for="edit-loadplugins-counter">Plugin to count symbols, symbols without blanks and words </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-loadPlugins-drupalbreaks">
+ <input type="checkbox" id="edit-loadplugins-drupalbreaks" name="loadPlugins[drupalbreaks]" value="drupalbreaks" checked="checked" class="form-checkbox" />  <label class="option" for="edit-loadplugins-drupalbreaks">Plugin for inserting Drupal teaser and page breaks. </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-loadPlugins-imce">
+ <input type="checkbox" id="edit-loadplugins-imce" name="loadPlugins[imce]" value="imce" class="form-checkbox" />  <label class="option" for="edit-loadplugins-imce">Plugin for inserting files from imce without image dialog </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-loadPlugins-mediaembed">
+ <input type="checkbox" id="edit-loadplugins-mediaembed" name="loadPlugins[mediaembed]" value="mediaembed" class="form-checkbox" />  <label class="option" for="edit-loadplugins-mediaembed">Plugin for inserting Drupal embeded media </label>
+
+</div>
+</div>
+<div class="description">Choose the plugins that you want to enable in CKEditor.</div>
+</div>
+<div class="form-item form-type-radios form-item-expand">
+  <label for="edit-expand">Toolbar state on startup </label>
+ <div id="edit-expand" class="form-radios"><div class="form-item form-type-radio form-item-expand">
+ <input type="radio" id="edit-expand-t" name="expand" value="t" checked="checked" class="form-radio" />  <label class="option" for="edit-expand-t">Expanded </label>
+
+</div>
+<div class="form-item form-type-radio form-item-expand">
+ <input type="radio" id="edit-expand-f" name="expand" value="f" class="form-radio" />  <label class="option" for="edit-expand-f">Collapsed </label>
+
+</div>
+</div>
+<div class="description">The toolbar will start in an expanded or collapsed state.</div>
+</div>
+<div class="form-item form-type-textfield form-item-width">
+  <label for="edit-width">Editor width </label>
+ <input type="text" id="edit-width" name="width" value="100%" size="40" maxlength="128" class="form-text" />
+<div class="description">Editor interface width in pixels or percent. Examples: 400, 100%.</div>
+</div>
+<div class="form-item form-type-select form-item-lang">
+  <label for="edit-lang">Language </label>
+ <select id="edit-lang" name="lang" class="form-select"><option value="af">Afrikaans</option><option value="ar">Arabic</option><option value="eu">Basque</option><option value="bn">Bengali/Bangla</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="zh-cn">Chinese Simplified</option><option value="zh">Chinese Traditional</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en" selected="selected">English</option><option value="en-au">English (Australia)</option><option value="en-ca">English (Canadian)</option><option value="en-uk">English (United Kingdom)</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="fo">Faroese</option><option value="fi">Finnish</option><option value="fr">French</option><option value="gl">Galician</option><option value="de">German</option><option value="el">Greek</option><option value="he">Hebrew</option><option value="hi">Hindi</option><option value="hu">Hungarian</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="ms">Malay</option><option value="mn">Mongolian</option><option value="no">Norwegian</option><option value="nb">Norwegian Bokmal</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt-br">Portuguese (Brazil)</option><option value="pt">Portuguese (Portugal)</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sr">Serbian (Cyrillic)</option><option value="sr-latn">Serbian (Latin)</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="es">Spanish</option><option value="sv">Swedish</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="vi">Vietnamese</option></select>
+<div class="description">The language for the CKEditor user interface.</div>
+</div>
+<div class="form-item form-type-radios form-item-auto-lang">
+  <label for="edit-auto-lang">Auto-detect language </label>
+ <div id="edit-auto-lang" class="form-radios"><div class="form-item form-type-radio form-item-auto-lang">
+ <input type="radio" id="edit-auto-lang-t" name="auto_lang" value="t" checked="checked" class="form-radio" />  <label class="option" for="edit-auto-lang-t">Enabled </label>
+
+</div>
+<div class="form-item form-type-radio form-item-auto-lang">
+ <input type="radio" id="edit-auto-lang-f" name="auto_lang" value="f" class="form-radio" />  <label class="option" for="edit-auto-lang-f">Disabled </label>
+
+</div>
+</div>
+<div class="description">Automatically detect the user language.</div>
+</div>
+<div class="form-item form-type-select form-item-language-direction">
+  <label for="edit-language-direction">Language direction </label>
+ <select id="edit-language-direction" name="language_direction" class="form-select"><option value="default" selected="selected">Get from current locale (default)</option><option value="ltr">Left-To-Right</option><option value="rtl">Right-To-Left</option></select>
+<div class="description">Choose the language direction used in the editing area. Even when CKEditor automatically detects the user language and adjusts its user interface, the editing area is not automatically changed into the LTR or RTL mode. To be able to type LTR (like English) and RTL (like Arabic, Hebrew, Persian) content at the same time, please make sure that the <strong>BidiLtr</strong> and <strong>BidiRtl</strong> buttons are enabled in the toolbar.</div>
+</div>
+</div></fieldset>
+<fieldset class="collapsible collapsed form-wrapper" id="edit-output"><legend><span class="fieldset-legend">Cleanup and output</span></legend><div class="fieldset-wrapper"><div class="form-item form-type-select form-item-enter-mode">
+  <label for="edit-enter-mode">Enter mode </label>
+ <select id="edit-enter-mode" name="enter_mode" class="form-select"><option value="p" selected="selected">&lt;p&gt;</option><option value="br">&lt;br&gt;</option><option value="div">&lt;div&gt;</option></select>
+<div class="description">Set which tag should be used by CKEditor when the <em>Enter</em> key is pressed.</div>
+</div>
+<div class="form-item form-type-select form-item-shift-enter-mode">
+  <label for="edit-shift-enter-mode">Shift+Enter mode </label>
+ <select id="edit-shift-enter-mode" name="shift_enter_mode" class="form-select"><option value="p">&lt;p&gt;</option><option value="br" selected="selected">&lt;br&gt;</option><option value="div">&lt;div&gt;</option></select>
+<div class="description">Set which tag should be used by CKEditor when the <em>Shift+Enter</em> key combination is pressed.</div>
+</div>
+<div class="form-item form-type-textfield form-item-font-format">
+  <label for="edit-font-format">Font formats </label>
+ <input type="text" id="edit-font-format" name="font_format" value="p;div;pre;address;h1;h2;h3;h4;h5;h6" size="40" maxlength="250" class="form-text" />
+<div class="description">Semicolon-separated list of HTML font formats. Allowed values are: <code>p;div;pre;address;h1;h2;h3;h4;h5;h6</code></div>
+</div>
+<div class="form-item form-type-radios form-item-custom-formatting">
+  <label for="edit-custom-formatting">Use custom formatting options </label>
+ <div id="edit-custom-formatting" class="form-radios"><div class="form-item form-type-radio form-item-custom-formatting">
+ <input type="radio" id="edit-custom-formatting-t" name="custom_formatting" value="t" class="form-radio" />  <label class="option" for="edit-custom-formatting-t">Yes </label>
+
+</div>
+<div class="form-item form-type-radio form-item-custom-formatting">
+ <input type="radio" id="edit-custom-formatting-f" name="custom_formatting" value="f" checked="checked" class="form-radio" />  <label class="option" for="edit-custom-formatting-f">No </label>
+
+</div>
+</div>
+</div>
+<fieldset class="form-wrapper" id="edit-formatting"><legend><span class="fieldset-legend">Custom formatting options</span></legend><div class="fieldset-wrapper"><div id="edit-formatting-custom-formatting-options" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-formatting-custom-formatting-options-indent">
+ <input type="checkbox" id="edit-formatting-custom-formatting-options-indent" name="formatting[custom_formatting_options][indent]" value="indent" checked="checked" class="form-checkbox" />  <label class="option" for="edit-formatting-custom-formatting-options-indent">Indent the element contents. </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-formatting-custom-formatting-options-breakBeforeOpen">
+ <input type="checkbox" id="edit-formatting-custom-formatting-options-breakbeforeopen" name="formatting[custom_formatting_options][breakBeforeOpen]" value="breakBeforeOpen" checked="checked" class="form-checkbox" />  <label class="option" for="edit-formatting-custom-formatting-options-breakbeforeopen">Break line before the opening tag. </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-formatting-custom-formatting-options-breakAfterOpen">
+ <input type="checkbox" id="edit-formatting-custom-formatting-options-breakafteropen" name="formatting[custom_formatting_options][breakAfterOpen]" value="breakAfterOpen" checked="checked" class="form-checkbox" />  <label class="option" for="edit-formatting-custom-formatting-options-breakafteropen">Break line after the opening tag. </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-formatting-custom-formatting-options-breakBeforeClose">
+ <input type="checkbox" id="edit-formatting-custom-formatting-options-breakbeforeclose" name="formatting[custom_formatting_options][breakBeforeClose]" value="breakBeforeClose" class="form-checkbox" />  <label class="option" for="edit-formatting-custom-formatting-options-breakbeforeclose">Break line before the closing tag. </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-formatting-custom-formatting-options-breakAfterClose">
+ <input type="checkbox" id="edit-formatting-custom-formatting-options-breakafterclose" name="formatting[custom_formatting_options][breakAfterClose]" value="breakAfterClose" checked="checked" class="form-checkbox" />  <label class="option" for="edit-formatting-custom-formatting-options-breakafterclose">Break line after the closing tag. </label>
+
+</div>
+<div class="form-item form-type-checkbox form-item-formatting-custom-formatting-options-pre-indent">
+ <input type="checkbox" id="edit-formatting-custom-formatting-options-pre-indent" name="formatting[custom_formatting_options][pre_indent]" value="pre_indent" class="form-checkbox" />  <label class="option" for="edit-formatting-custom-formatting-options-pre-indent">Indent the <code>&lt;pre&gt;</code> element contents. </label>
+
+</div>
+</div></div></fieldset>
+</div></fieldset>
+<fieldset class="collapsible collapsed form-wrapper" id="edit-css"><legend><span class="fieldset-legend">CSS</span></legend><div class="fieldset-wrapper"><div class="form-item form-type-select form-item-css-mode">
+  <label for="edit-css-mode">Editor CSS </label>
+ <select id="edit-css-mode" name="css_mode" class="form-select"><option value="theme">Use theme CSS</option><option value="self" selected="selected">Define CSS</option><option value="none">CKEditor default</option></select>
+<div class="description">Defines the CSS to be used in the editor area.<br /><strong>Use theme CSS</strong> &ndash; load the <code>style.css</code> file from the current site theme.<br /><strong>Define CSS</strong> &ndash; enter the CSS file path below.<br /><strong>CKEditor default</strong> &ndash; use the default editor CSS.</div>
+</div>
+<div class="form-item form-type-textfield form-item-css-path">
+  <label for="edit-css-path">CSS file path </label>
+ <input type="text" id="edit-css-path" name="css_path" value="%teditor.css" size="40" maxlength="255" class="form-text" />
+<div class="description">Enter the path to the CSS file (Example: <code>"css/editor.css"</code>) or a list of CSS files separated with a comma (Example: <code>"/themes/garland/style.css,http://example.com/style.css"</code>). Make sure you select the <strong>Define CSS</strong> option above.<br />Available placeholders:<br /><code>%h</code> &ndash; host name (<code>/degree/</code>).<br /><code>%t</code> &ndash; path to theme (<code>/degree/themes/seven/</code>).</div>
+</div>
+<div class="form-item form-type-select form-item-css-style">
+  <label for="edit-css-style">Predefined styles </label>
+ <select id="edit-css-style" name="css_style" class="form-select"><option value="theme">Use theme ckeditor.styles.js</option><option value="self" selected="selected">Define path to ckeditor.styles.js</option><option value="default">CKEditor default</option></select>
+<div class="description">Define the location of the <code>ckeditor.styles.js</code> file. It is used by the <strong>Style</strong> drop-down list available in the default toolbar. Copy the <code>sites/all/modules/contrib/ckeditor/ckeditor.styles.js</code> file into your theme directory (<code>themes/seven/ckeditor.styles.js</code>) and adjust it to your needs.</div>
+</div>
+<div class="form-item form-type-textfield form-item-styles-path">
+  <label for="edit-styles-path">Predefined styles path </label>
+ <input type="text" id="edit-styles-path" name="styles_path" value="%t/includes/ckeditor.styles.js" size="40" maxlength="255" class="form-text" />
+<div class="description">Enter the path to a file with predefined styles (Example: <code>/ckeditor.styles.js</code>). Make sure you select the <strong>Define path to ckeditor.styles.js</strong> option above.<br />Available placeholders:<br /><code>%h</code> &ndash; host name (<code>/degree/</code>).<br /><code>%t</code> &ndash; path to theme (<code>/degree/themes/seven/</code>).<br /><code>%m</code> &ndash; path to the CKEditor module (<code>sites/all/modules/contrib/ckeditor</code>).</div>
+</div>
+</div></fieldset>
+<fieldset class="collapsible collapsed form-wrapper" id="edit-ckeditor-upload-settings"><legend><span class="fieldset-legend">File browser settings</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">Set the file browser settings. A file browser will allow you to browse the files stored on the server and embed them as links, images, or Flash movies. CKEditor is compatible with such Drupal modules as <a href="http://drupal.org/project/imce">IMCE</a> or <a href="http://drupal.org/project/elfinder">elFinder</a>. CKEditor can be also integrated with <a href="http://cksource.com/ckfinder">CKFinder</a>, an advanced Ajax file manager.</div><div class="form-item form-type-select form-item-filebrowser">
+  <label for="edit-filebrowser">File browser type (Link dialog window) </label>
+ <select id="edit-filebrowser" name="filebrowser" class="form-select"><option value="none">None</option><option value="ckfinder">CKFinder</option><option value="imce" selected="selected">IMCE</option></select>
+<div class="description">Select the file browser that you would like to use to upload files.</div>
+</div>
+<div class="form-item form-type-select form-item-filebrowser-image">
+  <label for="edit-filebrowser-image">File browser type (Image dialog window) </label>
+ <select id="edit-filebrowser-image" name="filebrowser_image" class="form-select"><option value="">Same as in the Link dialog window</option><option value="ckfinder">CKFinder</option><option value="imce" selected="selected">IMCE</option></select>
+<div class="description">Select the file browser that you would like to use to upload images.</div>
+</div>
+<div class="form-item form-type-select form-item-filebrowser-flash">
+  <label for="edit-filebrowser-flash">File browser type (Flash dialog window) </label>
+ <select id="edit-filebrowser-flash" name="filebrowser_flash" class="form-select"><option value="">Same as in the Link dialog window</option><option value="ckfinder">CKFinder</option><option value="imce" selected="selected">IMCE</option></select>
+<div class="description">Select the file browser that you would like to use to upload Flash movies.</div>
+</div>
+<fieldset><legend>CKFinder settings</legend><div class="form-item form-type-textfield form-item-UserFilesPath">
+  <label for="edit-userfilespath">Path to uploaded files </label>
+ <input type="text" id="edit-userfilespath" name="UserFilesPath" value="%b%f/" size="40" maxlength="255" class="form-text" />
+<div class="description">Path to uploaded files relative to the document root.<br />Available placeholders:<br/><code>%b</code> &ndash; the base URL path of the Drupal installation (<code>/degree/</code>).<br/><code>%f</code> &ndash; the Drupal file system path where the files are stored (<code>sites/default/files</code>).<br /><code>%u</code> &ndash; User ID.<br /><code>%n</code> &ndash; Username.<br />Current path: <code>/degree/sites/default/files/</code></div>
+</div>
+<div class="form-item form-type-textfield form-item-UserFilesAbsolutePath">
+  <label for="edit-userfilesabsolutepath">Absolute path to uploaded files </label>
+ <input type="text" id="edit-userfilesabsolutepath" name="UserFilesAbsolutePath" value="%d%b%f/" size="40" maxlength="255" class="form-text" />
+<div class="description">The path to the local directory (on the server) which points to the path defined above. If left empty, CKEditor will try to discover the right path.<br />Available placeholders:<br/><code>%d</code> &ndash; the server path to the document root (<code>/Users/mngolab/Sites</code>).<br /><code>%b</code> &ndash; the base URL path of the Drupal installation (<code>/degree/</code>).<br/><code>%f</code> &ndash; the Drupal file system path where the files are stored (<code>sites/default/files</code>).<br /><code>%u</code> &ndash; User ID.<br /><code>%n</code> &ndash; Username.<br />Current path: <code>/Users/mngolab/Sites/degree/sites/default/files/</code></div>
+</div>
+</fieldset></div></fieldset>
+<fieldset class="collapsible collapsed form-wrapper" id="edit-advanced"><legend><span class="fieldset-legend">Advanced options</span></legend><div class="fieldset-wrapper"><div class="form-item form-type-select form-item-forcePasteAsPlainText">
+  <label for="edit-forcepasteasplaintext">Force pasting as plain text </label>
+ <select id="edit-forcepasteasplaintext" name="forcePasteAsPlainText" class="form-select"><option value="t">Enabled</option><option value="f" selected="selected">Disabled</option></select>
+<div class="description">If enabled, HTML content will be automatically changed to plain text when pasting.</div>
+</div>
+<div class="form-item form-type-radios form-item-html-entities">
+  <label for="edit-html-entities">HTML Entities </label>
+ <div id="edit-html-entities" class="form-radios"><div class="form-item form-type-radio form-item-html-entities">
+ <input type="radio" id="edit-html-entities-f" name="html_entities" value="f" checked="checked" class="form-radio" />  <label class="option" for="edit-html-entities-f">No </label>
+
+</div>
+<div class="form-item form-type-radio form-item-html-entities">
+ <input type="radio" id="edit-html-entities-t" name="html_entities" value="t" class="form-radio" />  <label class="option" for="edit-html-entities-t">Yes </label>
+
+</div>
+</div>
+<div class="description">Convert all applicable characters to HTML entities.</div>
+</div>
+<div class="form-item form-type-radios form-item-scayt-autoStartup">
+  <label for="edit-scayt-autostartup">Spellchecker </label>
+ <div id="edit-scayt-autostartup" class="form-radios"><div class="form-item form-type-radio form-item-scayt-autoStartup">
+ <input type="radio" id="edit-scayt-autostartup-f" name="scayt_autoStartup" value="f" class="form-radio" />  <label class="option" for="edit-scayt-autostartup-f">No </label>
+
+</div>
+<div class="form-item form-type-radio form-item-scayt-autoStartup">
+ <input type="radio" id="edit-scayt-autostartup-t" name="scayt_autoStartup" value="t" checked="checked" class="form-radio" />  <label class="option" for="edit-scayt-autostartup-t">Yes </label>
+
+</div>
+</div>
+<div class="description">If enabled, turns on SCAYT (Spell Check As You Type) automatically after loading the editor.</div>
+</div>
+<div class="form-item form-type-radios form-item-theme-config-js">
+  <label for="edit-theme-config-js">Load <code>ckeditor.config.js</code> from the theme path </label>
+ <div id="edit-theme-config-js" class="form-radios"><div class="form-item form-type-radio form-item-theme-config-js">
+ <input type="radio" id="edit-theme-config-js-t" name="theme_config_js" value="t" checked="checked" class="form-radio" />  <label class="option" for="edit-theme-config-js-t">Yes </label>
+
+</div>
+<div class="form-item form-type-radio form-item-theme-config-js">
+ <input type="radio" id="edit-theme-config-js-f" name="theme_config_js" value="f" class="form-radio" />  <label class="option" for="edit-theme-config-js-f">No </label>
+
+</div>
+</div>
+<div class="description">When enabled, the editor will try to load the <code>ckeditor.config.js</code> file from the theme directory.</div>
+</div>
+<div class="form-item form-type-textarea form-item-js-conf">
+  <label for="edit-js-conf">Custom JavaScript configuration </label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-js-conf" name="js_conf" cols="60" rows="5" class="form-textarea">config.allowedContent = true;</textarea></div>
+<div class="description">In order to change CKEditor configuration globally, you should modify the <code>sites/all/modules/contrib/ckeditor/ckeditor.config.js</code> configuration file. Sometimes it is required to change the CKEditor configuration for a single profile only. Use this box to define settings that are unique for this profile. Available options are listed in the <a href="http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html">CKEditor documentation</a>. Add the following code snippet to change the fonts available in the CKEditor <strong>Font</strong> and <strong>Size</strong> drop-down lists: <pre>config.font_names = &#039;Arial;Times New Roman;Verdana&#039;;
+config.fontSize_sizes = &#039;16/16px;24/24px;48/48px;&#039;;</pre><strong>Warning</strong>: If you make a mistake here, CKEditor may not load correctly.</div>
+</div>
+</div></fieldset>
+<input type="submit" id="edit-submit" name="op" value="Save" class="form-submit" /><input type="hidden" name="form_build_id" value="form-WpKdfHKZDbP8pX0M1Jf0NnkFiCRPHj_sqrmwNNUOsww" />
+<input type="hidden" name="form_token" value="ziPmLwch-aPT7qK01yFBnRqKm9RYfPCLxF9DhfiuB9E" />
+<input type="hidden" name="form_id" value="ckeditor_admin_profile_form" />
+</div></form>  </div>
+</div>
+  </div>
+    </div>
+
+    <div id="footer">
+          </div>
+
+  </div>
+  </body>
+</html>

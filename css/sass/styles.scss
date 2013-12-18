@@ -1,0 +1,620 @@
+/*
+ * Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+
+
+/*VARIABLES*/
+
+/*defined widths*/
+$page-wrap-width: 960px;
+$gutter-width:9px;
+
+/*solid colors*/
+$cyan:#00d2bb;
+$gray:#6d6e70;
+$orange:#f67e27;
+
+/*gradients*/
+$bar-gradient:linear-gradient(left,#1b75bb, #00adee)#00adee;
+$bg-gradient:linear-gradient(#040267,#00adee);
+
+/*borders*/
+$cyan-border:1px solid $cyan;
+
+/*MIXINS*/
+
+@mixin horz-list{
+	li{
+		display:inline-block;
+		margin-right:25px;
+		&:last-child{margin-right:0;}
+	}
+}
+
+@mixin center-vertical{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+@mixin highlight($bg){
+	margin:0 0 0 -10px;
+	padding:10px;
+	background:image-url($bg) no-repeat;
+	color:#00c717;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+body{
+	background:image-url("body-grid-bg.png");
+	font-family: 'Noto Sans', sans-serif;
+}
+
+h2{
+	padding-bottom:50px;
+	color:$orange;
+	font-size:100px;
+	font-weight:bold;
+	line-height:1.05em;
+	text-transform:uppercase;
+}
+
+h3{
+	margin-bottom:20px;
+	color:$cyan;
+	font-size:30px;
+	font-weight:bold;
+}
+
+p{
+	margin-bottom:15px;
+	color:$gray;
+	font-size: 18px;
+	line-height:1.25em;
+}
+
+input[type="text"],
+input[type="email"]{
+	border:none;
+	color:$gray;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+a{text-decoration:none;}
+
+img{max-width:100%;}
+
+.page-wrapper{
+	margin:0 auto;
+	width:$page-wrap-width;
+}
+
+.logo{
+	background-image:image-url("logo.png");
+	background-repeat:no-repeat;
+	text-indent:-999999px;
+}
+
+/* column sizes */
+.three-columns{
+	width: 23%;
+}
+
+.four-columns{
+	width:30%;
+}
+
+.five-columns{
+	width:40%;
+}
+
+.six-columns{
+	width: 48%;
+}
+.eight-columns{
+	width: 64%;
+}
+
+.ten-columns{
+	width: 83%;
+}
+
+.two-columns,
+.three-columns,
+.four-columns,
+.five-columns,
+.six-columns,
+.eight-columns,
+.ten-columns{
+	display:inline-block;
+	vertical-align:top;
+	margin: 0 $gutter-width;
+	&.right{float:right;}
+	&.last{margin-right:0;}
+}
+
+
+.whole-page{
+	width:100%;
+}
+
+/* navigations */
+
+nav{
+	height:70px;
+	ul{
+		margin:20px 25px 0 0;
+		float:right;
+		list-style-type:none;
+		li{ 
+			font-size:11px;
+			color:#fff;
+			display:inline-block;
+			a{
+				padding-right:10px;
+				color:#fff;
+				font-size:12px;
+				text-transform:uppercase;
+			}
+			&:after{
+				content:"/";
+			}
+			&:last-child:after{
+				content:"";
+			}
+		}
+
+	}
+}
+
+#sliding-nav{
+	width:100%;
+	height:65px;
+	@include background-with-css2-fallback($bar-gradient);
+	&.stuck{
+		position:fixed;
+		top:0;
+		z-index:9999999;
+	}
+	.logo{
+		float:left;
+		margin:15px 0 0 25px;
+		width:155px;
+		height:42px;
+		background:image-url("logo-small.png") no-repeat;
+	}
+}
+
+/* sections */
+
+#home{
+	@include background(image-url("intro-drawing.png") no-repeat,image-url("intro-grid-bg.png"),$bg-gradient);
+	background-position:top center;
+
+	&:before{
+		content: "";
+		display: block;
+		width:100%;
+		height:15px;
+		@include background-with-css2-fallback($bar-gradient);
+	}
+
+	h1.logo{
+		width:410px;
+		height:110px;
+		margin: 20px 0 0 -20px;
+	}
+
+	p{
+		padding-right: 100px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 1.25em;
+		&.intro-paragraph{
+			margin: 40px 0 20px;
+			padding-right: 100px;
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 1.15em;
+		}
+	}
+
+	.revolution-btn{
+		display:block;
+		width:310px;
+		height: 67px;
+		margin: 60px 0 60px 0;
+		padding-top:29px;
+		background:image-url("join-button-wide.png") no-repeat;
+		color:#fff;
+		font-size:20px;
+		font-style:italic;
+		text-align:center;
+		small{
+			font-size: 14px;
+		}
+		&:hover{
+			color:#0a0e71;
+		}
+	}
+
+	.buckets{
+		margin-top:25px;
+		padding:20px 0 45px;
+		background:image-url("intro-buckets-bg.png");
+		clear:both;		
+		li{
+			display:inline-block;
+			color:#fff;
+			vertical-align:top;
+			>*{
+				padding:0 10px;
+			}
+			h3{
+				margin:25px 0 15px;
+				color:#fff;
+				font-family: 'Grand Hotel', cursive;
+				font-size:30px;
+				font-weight:normal;
+				letter-spacing:0.05em;
+			}
+			p{
+				font-size:14px;
+				font-weight:normal;
+				line-height:1.25em;
+			}
+			a{
+				color:#fff;
+			}
+		}
+	}
+}
+
+#content{
+	background:image-url("path-bg.png") top center no-repeat;
+}
+
+#intro{
+	height:1000px;
+	padding-top:345px;
+}
+
+#first-steps{
+	margin-bottom: 350px;
+	.video-ideas{
+		padding-bottom:70px;
+		h3{@include highlight("video-ideas-bg.png");}
+		p{padding-right: 40px;}
+		img.cube{margin-top:75px;}
+	}
+	.video-listing{
+		margin-top:25px;
+		margin-bottom:220px;
+	}
+	.content-tasks{
+		clear:both;
+		position:relative;
+		top:120px;
+		padding-bottom:55px;
+		h3{
+			@include highlight("content-tasks-bg.png");
+			margin-top:65px;
+		}
+	}
+	.math-innovation{
+		position:relative;
+		top:150px;
+		h3{@include highlight("math-innovation-bg.png");}
+		padding-bottom:230px;
+	}
+	.tools-for-parents{
+		h3{
+			@include highlight("tools-for-parents-bg.png");
+			margin-top:30px;}
+	}
+}
+
+#whats-next{
+	height:480px;
+}
+
+#news{
+	.coming-soon{
+		margin-top:200px;
+		position:relative;
+		width:100%;
+		height:519px;
+		background:image-url("coming-soon-bg.png") center no-repeat;
+		h3{
+			position:absolute;
+			top:35%;
+			left:38%;
+			max-width:265px;
+			font-style:italic;
+			line-height:1.25em;
+			.highlight{
+				@include highlight("coming-soon-highlight.png");
+				padding-top:0;
+			}
+		}
+	}
+
+}
+
+#revolution{
+	.cyan-block{
+		padding:40px 0 70px;
+		background:$cyan;
+		border-bottom: 30px solid #fff;
+	}
+	.join-revolution{
+		width:329px;
+		height:178px;
+		background:image-url("join-revolution.png") no-repeat;
+		color:#fff;
+		font-size:36px;
+		font-style:italic;
+		text-align:center;
+		@include center-vertical;
+	}
+	#join-form{
+		p{
+			color:#fff;
+			font-size:12px;
+			font-weight:bold;
+		}
+		input[type="text"],
+		input[type="email"]{
+			width:95%;
+			margin-bottom:10px;
+			padding:5px 0 5px 20px;
+			font-size:16px;
+			&.error{
+				color:red;
+				border:2px solid red;
+			}
+		}
+
+		input[type="submit"]{
+			float:right;
+			width:97px;
+			height:31px;
+			margin-top:20px;
+			background:image-url("submit-btn.png") no-repeat;
+			border:0;
+			cursor:pointer;
+			text-indent:-99999px;
+		}
+		label{
+			&.error{
+				display: block;
+				margin: 10px 0 20px 15px;
+				color: red;
+				font-size: 15px;
+				line-height: 1.5em;
+			}
+		}
+
+		#email{
+			margin-bottom:15px;
+		}
+
+		.security{
+			padding:10px 15px;
+			width:93%;
+			background:#efef00;
+			.formula{
+				width:100%;
+				span{
+					display:block;
+					float:left;
+					width:50px;
+					height:25px;
+					padding-right:5px;
+					color:$orange;
+					font-size:44px;
+					font-weight:bold;
+				}
+				input[type="text"]{
+					margin: 0;
+					padding:0;
+					float: right;
+					width: 110px;
+					height: 55px;
+					font-size: 40px;
+					text-align:center;
+				}
+				label.error{
+					position: relative;
+					top: 53px;
+					left: -15px;
+				}
+			}
+		}
+
+		.accept{
+			margin: 3px 0 0 22px;
+			color:#fff;
+			font-weight:bold;
+		}
+	}
+	#testimonials{
+		margin:40px auto 80px;
+		li{
+			padding:10px 0;
+			color:#fff;
+			font-size:16px;
+			font-style:italic;
+			line-height:1.25em;
+			text-align:left;
+			&:after{
+				display:block;
+				margin-top:15px;
+				content:image-url("testimonial-line1.png");
+			}
+			&:last-child:after{
+				content:"";
+			}
+			.author{
+				display:block;
+				margin-top:10px;
+			}
+		}
+
+	}
+	.bottom{
+		background-image:image-url("ie-bottom-bg.jpg");
+		background-color:#081474;
+		background-repeat:repeat-x;
+		@include background(image-url("intro-grid-bg.png"),linear-gradient(#00adee,#040267));
+		text-align:center;
+	}
+}
+
+footer{
+	padding:20px 0 30px;
+	@include background-with-css2-fallback($bar-gradient);
+	color:#fff;
+	font-size:10px;
+	line-height:1.25em;
+}
+
+/*MISC*/
+
+/*alignment*/
+.center-align{
+	margin:0 auto;
+}
+
+.video-listing a,.news-listing .thumb,.math-item a,.article-listing a{
+	display:block;
+	padding:10px;
+	border: $cyan-border;
+}
+
+.video-listing li,.news-listing li,.article-listing li{
+	width:300px;
+	vertical-align:top;
+}
+
+.video-listing{
+	@include horz-list;
+	li{
+		margin-right:20px;
+		position:relative;
+	}
+	li a{
+		position:absolute;
+		display:block;
+		height: 150px;
+		background:image-url("play-button.png") 50% 50% no-repeat;
+	}
+	li h4{
+		margin-top:25px;
+		color:$orange;
+		text-align: center;
+	}
+}
+
+.article-listing{
+	@include horz-list;
+	li{
+		margin-right:20px;
+		position:relative;
+	}
+	li a{
+		position:absolute;
+		display:block;
+		height: 150px;
+	}
+	li h4{
+		margin-top:25px;
+		color:$orange;
+		text-align: center;
+	}
+}
+
+.news-listing{
+	@include horz-list;
+	.thumb{
+		@include center-vertical;
+		height:150px;
+		width:280px;
+		img{
+			max-width:280px;
+		}
+	}
+
+	.article-date{
+		margin:10px 0 0;
+		font-size:14px;
+	}
+	.article-title{
+		margin-bottom:10px;
+		font-size:14px;
+		font-weight:bold;
+	}
+
+	.summary{
+		color:$cyan;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+.math-item a{
+	max-width:88%;
+}
+
+.required-field:before{
+	margin-left: -10px;
+	position: relative;
+	top: 4px;
+	left: -5px;
+	color: #f67e27;
+	content: "*";
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*clearfix*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+/**
+ * IE Fixes - Because we all love IE... RIGHT?!
+ *
+ */
+
+ .is-ie9 #home,.lt-ie9 #home{
+ 	background:image-url("ie-top-bg.jpg") no-repeat top center;
+ }
+
